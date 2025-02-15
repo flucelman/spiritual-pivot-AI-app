@@ -1,0 +1,66 @@
+name: ai
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.6+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.0.10
+  provider: ^6.0.5
+  http: ^1.1.0
+  flutter_markdown: ^0.6.18
+  flutter_highlighter: ^0.1.1
+  shared_preferences: ^2.5.1   # 持久化存储
+  lottie: ^3.3.0
+  # 上传文件=========================
+  camera: ^0.11.1 #相机
+  path_provider: ^2.1.5 #保存到本地
+  path: ^1.9.0 #路径
+  permission_handler: ^11.3.1 #权限检查
+  image_picker: ^1.1.2 #上传图片
+  file_picker: ^6.1.1 #上传文件
+  # ocr=========================
+  docx_to_text: ^1.0.1 #读取word文字
+  pdf_render: ^1.4.12 #把pdf转为图片
+  image: ^4.3.0 #图片化
+  google_mlkit_text_recognition: ^0.14.0 #ocr识别
+  google_mlkit_commons: ^0.9.0
+  # 更新服务=========================
+  package_info_plus: ^4.0.0  # 获取当前应用版本信息
+  url_launcher: ^6.1.10      # 用于打开下载链接
+  dio: ^5.5.1              # 网络请求
+  open_file: ^3.5.10
+
+dependency_overrides:
+     js: ^0.7.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/chat/
+
+flutter_launcher_icons:
+  android: "logo"
+  ios: true
+  image_path: "assets/images/logo.jpeg"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/images/logo.jpeg"
+    background_color: "#ffffff"
+    theme_color: "#ffffff"
